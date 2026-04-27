@@ -1,6 +1,6 @@
 public interface Vacunable {
 
-    void registrarVacuna();
+    void registrarVacuna(String nombre);
     int getVacunasAplicadas();
 
 }

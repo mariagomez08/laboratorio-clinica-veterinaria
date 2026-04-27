@@ -31,8 +31,9 @@ public class Perro extends Animal implements Vacunable, Asegurable{
     }
 
     @Override
-    public void registrarVacuna(){
+    public void registrarVacuna(String nombre){
         vacuna++;
+        System.out.println("Aplicando vacuna: " + nombre);
     }
     @Override
     public int getVacunasAplicadas(){

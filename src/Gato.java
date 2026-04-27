@@ -37,12 +37,12 @@ public class Gato extends Animal implements Asegurable, Vacunable{
 
     @Override
     public String obtenerNumeroPoliza(){
-        return "Poliza perro " + nombre;
+        return "Poliza gato " + nombre;
     }
 
-    @Override
-    public void registrarVacuna(){
+    public void registrarVacuna(String nombre){
         vacuna++;
+        System.out.println("Aplicando: " + nombre);
     }
     @Override
     public int getVacunasAplicadas(){
